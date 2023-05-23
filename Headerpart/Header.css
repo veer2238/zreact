@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.head {
+    position: relative;
+    left: 60px;
+    top: -9px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.list ul li {
+    list-style: none;
+    font-size: 18px;
+    transition: all;
+    cursor: pointer;
+}
+
+.list ul li:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -6px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: rgb(60, 238, 60);
+
+
+    /* optional animation */
+
+    -o-transition: .5s;
+    -ms-transtion:.5s;
+    -moz-transition: .5s;
+    -webkit-transotion:.5s;
+    transition: .5s;
+}
+
+.list ul li:hover{
+    transform: scale(1);
+}
+
+.list ul li:hover:after{
+    width: 100%;
+    background: orange;
+}
+
+.button-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    right: 60px;
+    top: -9px;
+}
